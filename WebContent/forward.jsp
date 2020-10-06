@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Redirect</title>
 </head>
 <body>
+Hello
+<%
+ response.sendRedirect("index.jsp");
+ %>
 
 </body>
 </html>
