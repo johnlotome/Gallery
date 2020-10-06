@@ -7,6 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<! -- static includes: content changes infrequently -->
+<%@ include file="copyright.txt" %>
+<p/>
 
+<! -- Dynamic includes: content changes frequently -->
+<jsp:include page="updates.txt" />
 </body>
 </html>
