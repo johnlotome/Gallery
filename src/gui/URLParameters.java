@@ -29,6 +29,7 @@ public class URLParameters extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+//		http://localhost:8080/Gallery/URLParameters?user=sammy&id=1
 		String user = request.getParameter("user");
 		String id = request.getParameter("id");
 		PrintWriter out = response.getWriter();
