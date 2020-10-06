@@ -1,6 +1,8 @@
 package gui;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,7 +29,14 @@ public class HelloWorld extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		/*
+		 * @param{request} gets items submitted via url
+		 * @param{response} writes to browser
+		 */
+		PrintWriter out = response.getWriter();
+		out.println("<html>");
+		out.println("<b>Hello World</b>");
+		out.println("</html>");
 	}
 
 	/**
