@@ -27,7 +27,18 @@ public class Controller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		String action = request.getParameter("action");
+		String page = "";
+		if(action == null) {
+			page = "/error.jsp";
+		}else if(action.equals("login")) {
+			page = "/login.jsp";
+		}else if(action.equals("about")) {
+			page = "/about.jsp";
+		}else {
+			page = "/error.jsp";
+		}
+		getServletContext().getRequestDispatcher(page).forward(request,response);
 	}
 
 	/**

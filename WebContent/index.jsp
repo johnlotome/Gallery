@@ -7,12 +7,8 @@
 <title>Welcome Page</title>
 </head>
 <body>
-<! -- These are simpily java scriplets-->
-<%@ page import="gui.*" %>
-
-<%
-TextOutput output = new TextOutput();
-out.println(output.getString());
- %>
+<p>This is the homepage</p>
+<p><a href="/Gallery/Controller?action=login">Go to login page</a></p>
+<p><a href="/Gallery/Controller?action=about">Go to about page</a></p>
 </body>
 </html>
