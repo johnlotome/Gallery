@@ -18,7 +18,7 @@ if(id == null) {
 %>
 <strong>Id Parameter is Missing</strong>
 <% }else {%>
-<strong>Id parameter is available</strong>
+<strong>Id parameter is available where id=<%= id%></strong>
 <% } %>
 </body>
 </html>
