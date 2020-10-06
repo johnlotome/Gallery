@@ -7,9 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<% 
+java.util.Date date = new java.util.Date();
+String todaysDate = "Today's date is: ";
+%>
 <%=
-"Hello World Form Java Servlet Page" 
+todaysDate+date
 %>
 </body>
 </html>
